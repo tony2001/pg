@@ -13,10 +13,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"git.exness.io/anton.dovgal/pg/v10"
-	"git.exness.io/anton.dovgal/pg/v10/orm"
-	"git.exness.io/anton.dovgal/pg/v10/pgjson"
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10"
+	"github.com/go-pg/pg/v10/orm"
+	"github.com/go-pg/pg/v10/pgjson"
+	"github.com/go-pg/pg/v10/types"
 )
 
 type JSONMap map[string]interface{}

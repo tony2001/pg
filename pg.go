@@ -5,9 +5,9 @@ import (
 	"io"
 	"strconv"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal"
-	"git.exness.io/anton.dovgal/pg/v10/orm"
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/internal"
+	"github.com/go-pg/pg/v10/orm"
+	"github.com/go-pg/pg/v10/types"
 )
 
 // Discard is used with Query and QueryOne to discard rows.
@@ -37,11 +37,11 @@ func SafeQuery(query string, params ...interface{}) *orm.SafeQueryAppender {
 // In accepts a slice and returns a wrapper that can be used with PostgreSQL
 // IN operator:
 //
-//	Where("id IN (?)", pg.In([]int{1, 2, 3, 4}))
+//    Where("id IN (?)", pg.In([]int{1, 2, 3, 4}))
 //
 // produces
 //
-//	WHERE id IN (1, 2, 3, 4)
+//    WHERE id IN (1, 2, 3, 4)
 func In(slice interface{}) types.ValueAppender {
 	return types.In(slice)
 }
@@ -49,11 +49,11 @@ func In(slice interface{}) types.ValueAppender {
 // InMulti accepts multiple values and returns a wrapper that can be used
 // with PostgreSQL IN operator:
 //
-//	Where("(id1, id2) IN (?)", pg.InMulti([]int{1, 2}, []int{3, 4}))
+//    Where("(id1, id2) IN (?)", pg.InMulti([]int{1, 2}, []int{3, 4}))
 //
 // produces
 //
-//	WHERE (id1, id2) IN ((1, 2), (3, 4))
+//    WHERE (id1, id2) IN ((1, 2), (3, 4))
 func InMulti(values ...interface{}) types.ValueAppender {
 	return types.InMulti(values...)
 }
@@ -63,7 +63,7 @@ func InMulti(values ...interface{}) types.ValueAppender {
 //
 // For struct fields you can use array tag:
 //
-//	Emails  []string `pg:",array"`
+//    Emails  []string `pg:",array"`
 func Array(v interface{}) *types.Array {
 	return types.NewArray(v)
 }
@@ -74,7 +74,7 @@ func Array(v interface{}) *types.Array {
 //
 // For struct fields you can use hstore tag:
 //
-//	Attrs map[string]string `pg:",hstore"`
+//    Attrs map[string]string `pg:",hstore"`
 func Hstore(v interface{}) *types.Hstore {
 	return types.NewHstore(v)
 }

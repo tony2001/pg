@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal/pool"
+	"github.com/go-pg/pg/v10/internal/pool"
 	"github.com/stretchr/testify/assert"
 )
 
 /*
-The test is for testing the case that sending a cancel request when the timeout from connection comes earlier than ctx.Done().
+	The test is for testing the case that sending a cancel request when the timeout from connection comes earlier than ctx.Done().
 */
 func Test_baseDB_withConn(t *testing.T) {
 	b := mockBaseDB{}

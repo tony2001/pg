@@ -3,8 +3,8 @@ package orm_test
 import (
 	"reflect"
 
-	"git.exness.io/anton.dovgal/pg/v10/orm"
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/orm"
+	"github.com/go-pg/pg/v10/types"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

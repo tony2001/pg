@@ -1,7 +1,7 @@
 package types
 
 import (
-	"git.exness.io/anton.dovgal/pg/v10/internal/pool"
+	"github.com/go-pg/pg/v10/internal/pool"
 )
 
 type Reader = pool.Reader

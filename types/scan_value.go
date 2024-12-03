@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal"
-	"git.exness.io/anton.dovgal/pg/v10/pgjson"
+	"github.com/go-pg/pg/v10/internal"
+	"github.com/go-pg/pg/v10/pgjson"
 )
 
 var (
@@ -27,7 +27,7 @@ type ScannerFunc func(reflect.Value, Reader, int) error
 
 var valueScanners []ScannerFunc
 
-// nolint
+//nolint
 func init() {
 	valueScanners = []ScannerFunc{
 		reflect.Bool:          scanBoolValue,

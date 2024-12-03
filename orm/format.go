@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal"
-	"git.exness.io/anton.dovgal/pg/v10/internal/parser"
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/internal"
+	"github.com/go-pg/pg/v10/internal/parser"
+	"github.com/go-pg/pg/v10/types"
 )
 
 var defaultFmter = NewFormatter()
@@ -31,7 +31,7 @@ var (
 	_ types.ValueAppender = (*SafeQueryAppender)(nil)
 )
 
-// nolint
+//nolint
 func SafeQuery(query string, params ...interface{}) *SafeQueryAppender {
 	return &SafeQueryAppender{query, params}
 }

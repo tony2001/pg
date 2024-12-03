@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"sync"
 
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/types"
 )
 
 var _tables = newTables()

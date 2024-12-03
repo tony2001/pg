@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/types"
 )
 
 type TableModel interface {

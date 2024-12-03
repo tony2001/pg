@@ -3,7 +3,7 @@ package types
 import (
 	"time"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal"
+	"github.com/go-pg/pg/v10/internal"
 )
 
 const (

@@ -14,10 +14,10 @@ import (
 
 	"mellium.im/sasl"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal"
-	"git.exness.io/anton.dovgal/pg/v10/internal/pool"
-	"git.exness.io/anton.dovgal/pg/v10/orm"
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/internal"
+	"github.com/go-pg/pg/v10/internal/pool"
+	"github.com/go-pg/pg/v10/orm"
+	"github.com/go-pg/pg/v10/types"
 )
 
 // https://www.postgresql.org/docs/current/protocol-message-formats.html

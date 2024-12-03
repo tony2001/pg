@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"git.exness.io/anton.dovgal/pg/v10/orm"
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/orm"
+	"github.com/go-pg/pg/v10/types"
 )
 
 const pgTimeFormat = "15:04:05.999999999"

@@ -8,7 +8,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal"
+	"github.com/go-pg/pg/v10/internal"
 )
 
 var (
