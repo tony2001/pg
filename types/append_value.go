@@ -11,8 +11,8 @@ import (
 
 	"github.com/vmihailenco/bufpool"
 
-	"github.com/go-pg/pg/v10/internal"
-	"github.com/go-pg/pg/v10/pgjson"
+	"git.exness.io/anton.dovgal/pg/v10/internal"
+	"git.exness.io/anton.dovgal/pg/v10/pgjson"
 )
 
 var (
@@ -24,7 +24,7 @@ type AppenderFunc func([]byte, reflect.Value, int) []byte
 
 var appenders []AppenderFunc
 
-//nolint
+// nolint
 func init() {
 	appenders = []AppenderFunc{
 		reflect.Bool:          appendBoolValue,

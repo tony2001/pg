@@ -6,7 +6,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/go-pg/pg/v10/internal/pool"
+	"git.exness.io/anton.dovgal/pg/v10/internal/pool"
 )
 
 var _ = Describe("StickyConnPool", func() {

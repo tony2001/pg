@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-pg/pg/v10"
-	"github.com/go-pg/pg/v10/orm"
+	"git.exness.io/anton.dovgal/pg/v10"
+	"git.exness.io/anton.dovgal/pg/v10/orm"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/stretchr/testify/require"
