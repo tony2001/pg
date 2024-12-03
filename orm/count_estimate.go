@@ -3,14 +3,14 @@ package orm
 import (
 	"fmt"
 
-	"github.com/go-pg/pg/v10/internal"
+	"git.exness.io/anton.dovgal/pg/v10/internal"
 )
 
 // Placeholder that is replaced with count(*).
 const placeholder = `'_go_pg_placeholder'`
 
 // https://wiki.postgresql.org/wiki/Count_estimate
-//nolint
+// nolint
 var pgCountEstimateFunc = fmt.Sprintf(`
 CREATE OR REPLACE FUNCTION _go_pg_count_estimate_v2(query text, threshold int)
 RETURNS int AS $$
