@@ -56,7 +56,7 @@ type ReaderContext struct {
 }
 
 func NewReaderContext() *ReaderContext {
-	const bufSize = 1 << 20 // 1mb
+	const bufSize = 1 << 15 // 32Kb
 	return &ReaderContext{
 		BufReader:   NewBufReader(bufSize),
 		ColumnAlloc: NewColumnAlloc(),
