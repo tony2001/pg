@@ -3,8 +3,8 @@ package pgotel
 import (
 	"testing"
 
-	"git.exness.io/anton.dovgal/pg/v10"
-	"git.exness.io/anton.dovgal/pg/v10/orm"
+	"github.com/go-pg/pg/v10"
+	"github.com/go-pg/pg/v10/orm"
 )
 
 // mockResult is a mock implementation of the Result interface

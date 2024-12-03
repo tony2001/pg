@@ -8,7 +8,7 @@ import (
 	. "github.com/onsi/gomega"
 	"github.com/stretchr/testify/require"
 
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/types"
 )
 
 type User struct {

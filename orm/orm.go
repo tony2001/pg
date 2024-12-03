@@ -7,7 +7,7 @@ import (
 	"context"
 	"io"
 
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/types"
 )
 
 // ColumnScanner is used to scan column values.

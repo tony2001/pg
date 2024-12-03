@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal"
-	"git.exness.io/anton.dovgal/pg/v10/internal/pool"
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/internal"
+	"github.com/go-pg/pg/v10/internal/pool"
+	"github.com/go-pg/pg/v10/types"
 )
 
 const gopgChannel = "gopg:ping"

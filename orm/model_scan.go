@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/types"
 )
 
 type scanValuesModel struct {
@@ -14,7 +14,7 @@ type scanValuesModel struct {
 
 var _ Model = scanValuesModel{}
 
-// nolint
+//nolint
 func Scan(values ...interface{}) scanValuesModel {
 	return scanValuesModel{
 		values: values,

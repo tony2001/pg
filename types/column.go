@@ -3,8 +3,8 @@ package types
 import (
 	"encoding/json"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal/pool"
-	"git.exness.io/anton.dovgal/pg/v10/pgjson"
+	"github.com/go-pg/pg/v10/internal/pool"
+	"github.com/go-pg/pg/v10/pgjson"
 )
 
 const (

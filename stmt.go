@@ -4,10 +4,10 @@ import (
 	"context"
 	"errors"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal"
-	"git.exness.io/anton.dovgal/pg/v10/internal/pool"
-	"git.exness.io/anton.dovgal/pg/v10/orm"
-	"git.exness.io/anton.dovgal/pg/v10/types"
+	"github.com/go-pg/pg/v10/internal"
+	"github.com/go-pg/pg/v10/internal/pool"
+	"github.com/go-pg/pg/v10/orm"
+	"github.com/go-pg/pg/v10/types"
 )
 
 var errStmtClosed = errors.New("pg: statement is closed")

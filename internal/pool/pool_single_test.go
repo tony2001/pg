@@ -2,11 +2,10 @@ package pool_test
 
 import (
 	"context"
-
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal/pool"
+	"github.com/go-pg/pg/v10/internal/pool"
 )
 
 var _ = Describe("SingleConnPool", func() {

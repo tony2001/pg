@@ -4,7 +4,7 @@ import (
 	"context"
 	"reflect"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal"
+	"github.com/go-pg/pg/v10/internal"
 )
 
 type sliceTableModel struct {
@@ -39,7 +39,7 @@ func (m *sliceTableModel) init(sliceType reflect.Type) {
 	}
 }
 
-// nolint
+//nolint
 func (*sliceTableModel) useQueryOne() {}
 
 func (m *sliceTableModel) IsNil() bool {

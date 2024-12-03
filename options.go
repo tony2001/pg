@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"git.exness.io/anton.dovgal/pg/v10/internal/pool"
+	"github.com/go-pg/pg/v10/internal/pool"
 )
 
 // Options contains database connection options.

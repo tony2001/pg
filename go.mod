@@ -1,4 +1,4 @@
-module git.exness.io/anton.dovgal/pg/v10
+module github.com/go-pg/pg/v10
 
 go 1.19
 

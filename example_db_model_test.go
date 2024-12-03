@@ -3,8 +3,8 @@ package pg_test
 import (
 	"fmt"
 
-	"git.exness.io/anton.dovgal/pg/v10"
-	"git.exness.io/anton.dovgal/pg/v10/orm"
+	"github.com/go-pg/pg/v10"
+	"github.com/go-pg/pg/v10/orm"
 )
 
 type User struct {
