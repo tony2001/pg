@@ -3,7 +3,7 @@ package pg
 import (
 	"net"
 
-	"github.com/go-pg/pg/v10/internal"
+	"git.exness.io/anton.dovgal/pg/v10/internal"
 )
 
 // ErrNoRows is returned by QueryOne and ExecOne when query returned zero rows

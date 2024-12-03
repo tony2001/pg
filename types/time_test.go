@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-pg/pg/v10/types"
+	"git.exness.io/anton.dovgal/pg/v10/types"
 )
 
 func TestParseTimeString(t *testing.T) {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	pg "github.com/go-pg/pg/v10"
-	"github.com/go-pg/pg/v10/orm"
+	pg "git.exness.io/anton.dovgal/pg/v10"
+	"git.exness.io/anton.dovgal/pg/v10/orm"
 	"github.com/go-pg/pgext"
 )
 
