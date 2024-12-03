@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-const defaultBufSize = 65 << 10 // 65kb
+const defaultBufSize = 1 << 12 // 4kb
 
 var wbPool = sync.Pool{
 	New: func() interface{} {
