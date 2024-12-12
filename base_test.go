@@ -12,7 +12,7 @@ import (
 )
 
 /*
-	The test is for testing the case that sending a cancel request when the timeout from connection comes earlier than ctx.Done().
+The test is for testing the case that sending a cancel request when the timeout from connection comes earlier than ctx.Done().
 */
 func Test_baseDB_withConn(t *testing.T) {
 	b := mockBaseDB{}
@@ -81,6 +81,20 @@ func (m *mockPooler) Stats() *pool.Stats {
 
 func (m *mockPooler) Close() error {
 	return nil
+}
+
+func (m *mockPooler) GetWriteBuffer() *pool.WriteBuffer {
+	return pool.NewWriteBuffer(1024)
+}
+
+func (m *mockPooler) PutWriteBuffer(_ *pool.WriteBuffer) {
+}
+
+func (m *mockPooler) GetReaderContext() *pool.ReaderContext {
+	return pool.NewReaderContext(1024)
+}
+
+func (m *mockPooler) PutReaderContext(_ *pool.ReaderContext) {
 }
 
 type mockPGError struct {
