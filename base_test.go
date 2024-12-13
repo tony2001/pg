@@ -44,9 +44,10 @@ type mockPooler struct {
 }
 
 func (m *mockPooler) NewConn(ctx context.Context) (*pool.Conn, error) {
-	m.conn = &pool.Conn{ProcessID: 123, SecretKey: 234, Inited: true}
 	m.mockConn = mockConn{}
-	m.conn.SetNetConn(&m.mockConn)
+	m.conn = pool.NewConn(&m.mockConn, pool.NewConnPool(&pool.Options{}))
+	m.conn.ProcessID = 123
+	m.conn.SecretKey = 234
 	return m.conn, nil
 }
 
